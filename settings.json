@@ -15,6 +15,17 @@
 				"direction": "next"
 			},
 			"id": "Terminal.ScrollToNextMark"
+		},
+		{
+			"command": {
+				"action": "globalSummon",
+				"desktop": "toCurrent",
+				"dropdownDuration": 200,
+				"monitor": "any",
+				"name": "_quake",
+				"toggleVisibility": true
+			},
+			"id": "Terminal.ToggleQuakeMode"
 		}
 	],
 	"copyFormatting": "none",
@@ -23,20 +34,12 @@
 	"firstWindowPreference": "defaultProfile",
 	"keybindings": [
 		{
-			"id": "Terminal.ScrollToPreviousMark",
-			"keys": "ctrl+up"
+			"id": "Terminal.CopyToClipboard",
+			"keys": "ctrl+shift+c"
 		},
 		{
 			"id": "Terminal.DuplicatePaneAuto",
 			"keys": "alt+shift+d"
-		},
-		{
-			"id": "Terminal.ScrollToNextMark",
-			"keys": "ctrl+down"
-		},
-		{
-			"id": "Terminal.CopyToClipboard",
-			"keys": "ctrl+shift+c"
 		},
 		{
 			"id": "Terminal.FindText",
@@ -45,6 +48,18 @@
 		{
 			"id": "Terminal.PasteFromClipboard",
 			"keys": "ctrl+v"
+		},
+		{
+			"id": "Terminal.ScrollToNextMark",
+			"keys": "ctrl+down"
+		},
+		{
+			"id": "Terminal.ScrollToPreviousMark",
+			"keys": "ctrl+up"
+		},
+		{
+			"id": "Terminal.ToggleQuakeMode",
+			"keys": "alt+`"
 		}
 	],
 	"newTabMenu": [
@@ -114,7 +129,6 @@
 		]
 	},
 	"schemes": [],
-	"startOnUserLogin": true,
 	"theme": "dark",
 	"themes": [],
 	"windowingBehavior": "useAnyExisting"
